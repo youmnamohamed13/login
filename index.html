@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/download.jpeg">
+    <link rel="stylesheet" href="./css/min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>LoGoUt</title>
+</head>
+    <body class="">
+        <nav id="navLogin" class="position-fixed w-100 d-none">  
+            <div class="navLogin d-flex container h-25 justify-content-between">
+                <p class="SMART">SMART LOGIN</p>
+                <button class="btn btn-outline-warning">Logout</button>
+            </div>
+        </nav>
+        <div class="container d-flex justify-content-center align-items-center vh-100">
+            <div class="w-50 text-center">
+                <div id="registerForm" class="p-lg-5 border-primary ">
+                    <h1>Smart Login System</h1>
+                    <input id="name" class="form-control my-3" placeholder="Enter your name" type="text">
+                    <input id="email" class="form-control my-3" placeholder="Enter your email" type="email">
+                    <input id="password" class="form-control my-3" placeholder="Enter your password" type="password">
+                    <input id="image" class="form-control-file my-3" type="file" accept="image/*">
+                    <p id="registerError" class="text-danger d-none"></p>
+                    <button id="register" class="btn btn-outline-primary w-100 my-3">Register</button>
+                    <p>You have an account? <a href="#" class="text-primary " id="showLogin" >Sign In</a></p>
+                </div>
+                <div id="loginForm" class="d-none p-lg-5  border-primary">
+                    <h1>Smart Login System</h1>
+                    <input id="loginEmail" class="form-control my-3" placeholder="Enter your email" type="email">
+                    <input id="loginPassword" class="form-control my-3" placeholder="Enter your password" type="password">
+                    <p id="loginError" class="text-danger d-none">Incorrect email or password</p>
+                    <button id="login"class="btn btn-outline-primary w-100 my-3">Login</button>
+                    <p>Don’t have an account? <a href="#" class="text-primary" id="showRegister" >Sign Up</a></p>
+                </div>
+                <div id="resultPage" class="d-none">
+                    <h1>Welcome, <span id="userName"></span>!</h1>
+                    <img id="userImage" class="d-none mt-3" style="max-width: 300px;" alt="User Image">
+                </div>
+            </div>
+        </div>
+    <script src="./js/min.js"></script>
+</body>
+</html>
